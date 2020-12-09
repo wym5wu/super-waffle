@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="soft.mapper.DocInfoMapper">
+
+    <select id="totalPage" resultType="java.lang.Integer">
+       select COUNT(*)  from DOCINFO where 1=1
+        <if test="docTitle!=null and docTitle!='' ">
+            and docTittle=#{docTitle}
+        </if>
+        <if test="type!=null and type!='' ">
+            and type=#{type}
+        </if>
+        <if test="adminName!=null and adminName!='' ">
+            and adminName=#{adminName}
+        </if>
+        <if test="endTime!=null and endTime!='' and beginTime!=null and beginTime!=''">
+            and updateTime between #{beginTime} and #{endTime}
+        </if>
+    </select>
+
+
+
+    <select id="findAll" resultMap="two">
+        select D.*,A.* from DOCINFO D left join ADMIN A on D.ADMINID =A.ID where 1=1
+        <if test="docTitle!=null and docTitle!='' ">
+            and docTittle=#{docTitle}
+        </if>
+        <if test="type!=null and type!='' ">
+            and type = #{type}
+        </if>
+        <if test="adminName!=null and adminName!='' ">
+            and adminName=#{adminName}
+        </if>
+        <if test="endTime!=null and endTime!='' and beginTime!=null and beginTime!=''">
+            and updateTime between #{beginTime} and #{endTime}
+        </if>
+    </select>
+    <resultMap id="two" type="DocInfo">
+        <id column="id" property="id"></id>
+        <result column="docTittle" property="docTittle"></result>
+        <result column="adminId" property="adminId"></result>
+        <result column="dowNum" property="dowNum"></result>
+        <result column="docState" property="docState"></result>
+        <result column="updateTime" property="updateTime"></result>
+        <result column="type" property="type"></result>
+        <association  property="adminName" javaType="String" >
+            <result column="adminName" property="adminName"></result>
+        </association>
+    </resultMap>
+
+
+</mapper>

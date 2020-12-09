@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="soft.mapper.MenuMapper">
+    <select id="findMenus" resultType="Menu" resultMap="admins">
+    select * from menu;
+    </select>
+    <select id="selectUserBy" parameterType="java.lang.String" resultType="Admin">
+        select * from admin where role=#{role}
+    </select>
+    <resultMap id="admins" type="Menu">
+        <id column="menuId" property="menuId"></id>
+        <result column="menuName" property="menuName"></result>
+        <result column="role" property="role"></result>
+        <result column="pid" property="pid"></result>
+        <collection column="role" property="admins" ofType="Admin" select="selectUserBy" >
+            <id column="id" property="id"></id>
+            <result column="account" property="account"></result>
+            <result column="password" property="password"></result>
+            <result column="adminName" property="adminName"></result>
+            <result column="sex" property="sex"></result>
+            <result column="email" property="email"></result>
+            <result column="education" property="education"></result>
+            <result column="phone" property="phone"></result>
+            <result column="updateTime" property="updateTime"></result>
+            <result column="state" property="state"></result>
+            <result column="role" property="role"></result>
+        </collection>
+    </resultMap>
+
+    <select id="findeAlluser" resultType="Admin" resultMap="classMap">
+        select * from admin
+    </select>
+    <select id="ororor" parameterType="java.lang.String" resultType="Menu">
+          select * from menu where role= #{role}
+    </select>
+    <resultMap id="classMap" type="Admin">
+        <id column="id" property="id"></id>
+        <result column="account" property="account"></result>
+        <result column="password" property="password"></result>
+        <result column="adminName" property="adminName"></result>
+        <result column="sex" property="sex"></result>
+        <result column="email" property="email"></result>
+        <result column="education" property="education"></result>
+        <result column="phone" property="phone"></result>
+        <result column="updateTime" property="updateTime"></result>
+        <result column="state" property="state"></result>
+        <result column="role" property="role"></result>
+<!--        多对一-->
+        <association property="menus" column="role" javaType="Menu" select="ororor">
+            <id column="menuId" property="menuId"></id>
+            <result column="menuName" property="menuName"></result>
+            <result column="role" property="role"></result>
+            <result column="pid" property="pid"></result>
+        </association>
+    </resultMap>
+<!--    嵌套结果查询-->
+    <select id="findMenu" resultMap="One">
+        select t1.*,t2.* from menu t2 left join admin t1 on t1.role =t2.role
+    </select>
+    <resultMap id="One" type="Menu">
+        <id column="menuId" property="menuId"></id>
+        <result column="menuName" property="menuName"></result>
+        <result column="role" property="role"></result>
+        <result column="pid" property="pid"></result>
+        <collection  property="admins" ofType="Admin">
+            <id column="id" property="id"></id>
+            <result column="account" property="account"></result>
+            <result column="password" property="password"></result>
+            <result column="adminName" property="adminName"></result>
+            <result column="sex" property="sex"></result>
+            <result column="email" property="email"></result>
+            <result column="education" property="education"></result>
+            <result column="phone" property="phone"></result>
+            <result column="updateTime" property="updateTime"></result>
+            <result column="state" property="state"></result>
+            <result column="role" property="role"></result>
+        </collection>
+    </resultMap>
+
+<!--   多对一-->
+    <select id="findeAlluser1" resultMap="two">
+        select t1.*,t2.* from admin t2 left join menu t1 on t1.role =t2.role
+    </select>
+    <resultMap id="two" type="Admin">
+        <id column="id" property="id"></id>
+        <result column="account" property="account"></result>
+        <result column="password" property="password"></result>
+        <result column="adminName" property="adminName"></result>
+        <result column="sex" property="sex"></result>
+        <result column="email" property="email"></result>
+        <result column="education" property="education"></result>
+        <result column="phone" property="phone"></result>
+        <result column="updateTime" property="updateTime"></result>
+        <result column="state" property="state"></result>
+        <result column="role" property="role"></result>
+        <association  property="menus" javaType="Menu" >
+            <id column="menuId" property="menuId" ></id>
+            <result column="menuName" property="menuName"></result>
+            <result column="role" property="role"></result>
+            <result column="pid" property="pid"></result>
+        </association>
+    </resultMap>
+</mapper>

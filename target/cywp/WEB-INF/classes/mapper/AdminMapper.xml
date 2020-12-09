@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+        "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="soft.mapper.AdminMapper">
+
+    <insert id="addAdmin" parameterType="Admin" keyProperty="id" useGeneratedKeys="true">
+<!--    <selectKey keyProperty="id" order="BEFORE" resultType="java.lang.Integer">-->
+<!--        select user_seq.nextval from dual-->
+<!--    </selectKey>-->
+        insert  into admin(account,password,sex,adminName,email,education,phone,updateTime)values
+        (#{account},#{password},#{sex},#{adminName},#{email},#{education},#{phone},#{updateTime});
+    </insert>
+
+    <update id="updateAdmin"  parameterType="Admin">
+    update  admin
+--         update Admin set password=#{password}  where account=#{account}
+        <set>
+            <if test="password!=null">
+                password =#{password}
+            </if>
+            <if test="adminName!=null">
+                adminName =#{adminName}
+            </if>
+            <if test="sex!=null">
+                sex =#{sex}
+            </if>
+            <if test="education!=null">
+                education =#{education}
+            </if>
+            <if test="email!=null">
+                email =#{email}
+            </if>
+            <if test="updateTime!=null">
+                updateTime =#{updateTime}
+            </if>
+            <if test="phone!=null">
+                phone =#{phone}
+            </if>
+        </set>
+--     忽略前缀  prefixOverrides
+<!--        <trim prefix="set" prefixOverrides=",">-->
+<!--            ,adminname = #{adminname},password=#{password}    -->
+<!--        </trim>-->
+--         prefix 前缀覆盖并增加其内容
+--         suffix 后缀覆盖并增加其内容
+--         prefixOverrides 前缀判断条件
+--         suffixOverrides 后缀判断条件
+        <where>
+            id=${id}
+        </where>
+    </update>
+
+    <select id="findAll" resultType="Admin" parameterType="java.util.HashMap">
+        select * from admin where 1=1
+        <if test="name!=null and name!=''">
+           and adminName=#{name}
+        </if>
+        <if test="endTime!=null and endTime!='' and beginTime!=null and beginTime!=''">
+            and updateTime between #{beginTime} and #{endTime}
+        </if>
+    </select>
+    <select id="login"  resultType="Admin">
+        select * from admin where account=#{0} and password=#{1}
+    </select>
+
+    <select id="totalPage" resultType="java.lang.Integer">
+       select COUNT(*)  from admin where 1=1
+        <if test="name!=null and name!='' ">
+            and adminName=#{name}
+        </if>
+        <if test="endTime!=null and endTime!='' and beginTime!=null and beginTime!=''">
+            and updateTime between #{beginTime} and #{endTime}
+        </if>
+    </select>
+
+<!--    <select id="totalPage1" parameterType="list" resultType="Admin">-->
+<!--        select*from  admin where id in-->
+<!--        <foreach collection="list"  item="i" open="(" separator="," close=")">-->
+<!--            #{i}-->
+<!--        </foreach>-->
+<!--    </select>-->
+    <update id="updateState" >
+        update  admin set state=#{1} where id=#{0}
+
+    </update>
+
+    <delete id="deleteAdmin"  parameterType="java.lang.Integer">
+        delete from admin where id=#{0}
+    </delete>
+</mapper>
