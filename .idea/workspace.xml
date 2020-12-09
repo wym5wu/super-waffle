@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50e09330-17eb-4705-854e-b83608019aad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/soft/Dao/xxx.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +39,8 @@
         <option value="HTML File" />
         <option value="Tag Library Descriptor" />
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -272,7 +273,7 @@
       <workItem from="1606885218998" duration="24472000" />
       <workItem from="1606966515741" duration="1328000" />
       <workItem from="1606975548395" duration="47047000" />
-      <workItem from="1607389370421" duration="51940000" />
+      <workItem from="1607389370421" duration="52227000" />
     </task>
     <task id="LOCAL-00001" summary="测试">
       <created>1607498187105</created>
@@ -281,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607498187105</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="测试">
+      <created>1607499037110</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607499037110</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,10 +320,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="2" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1280.680@0.0.1280.680" timestamp="1606871976938" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1607498998857">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1607499035823">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607498998857" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607499035823" />
     <state x="0" y="50" key="DiffContextDialog" timestamp="1607497599631">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
