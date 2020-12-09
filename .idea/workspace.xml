@@ -6,7 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50e09330-17eb-4705-854e-b83608019aad" name="Default Changelist" comment="" />
+    <list default="true" id="50e09330-17eb-4705-854e-b83608019aad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +44,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -62,6 +68,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1l50x35udWVbk9NrfWuSqKIFnoi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -76,7 +83,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xjwj" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -87,6 +94,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -265,12 +273,15 @@
       <workItem from="1606885218998" duration="24472000" />
       <workItem from="1606966515741" duration="1328000" />
       <workItem from="1606975548395" duration="47047000" />
-      <workItem from="1607389370421" duration="48564000" />
+      <workItem from="1607389370421" duration="51059000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="2" key="#Template_Data_Languages" timestamp="1607393319236">
@@ -293,6 +304,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="2" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1280.680@0.0.1280.680" timestamp="1606871976938" />
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1607497600345">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607497600345" />
+    <state x="0" y="50" key="DiffContextDialog" timestamp="1607497599631">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="50" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1607497599631" />
+    <state x="447" y="169" key="FileChooserDialogImpl" timestamp="1607497969394">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="447" y="169" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1607497969394" />
     <state width="845" height="269" key="GridCell.Tab.0.bottom" timestamp="1607493192804">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -341,10 +364,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="845" height="269" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1607493192805" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1607321652684">
+    <state x="203" y="85" key="SettingsEditor" timestamp="1607497031547">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1607321652684" />
+    <state x="203" y="85" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1607497031547" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1607412015250">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -363,6 +386,15 @@
     <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1606981835438" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/webapp/pages/DocmentAudit.jsp</url>
+          <line>39</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="((Method)((java.util.concurrent.ConcurrentHashMap.MapEntry)((java.util.concurrent.ConcurrentHashMap)((MapperProxy)this.h).methodCache).entrySet().toArray()[0]).getKey()).signature" custom="java.util.concurrent.ConcurrentHashMap,java.lang.reflect.Proxy,java.lang.reflect.Method,java.util.concurrent.ConcurrentHashMap.MapEntry,org.apache.ibatis.binding.MapperProxy" />
