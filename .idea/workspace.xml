@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50e09330-17eb-4705-854e-b83608019aad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xjwj" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -273,15 +272,24 @@
       <workItem from="1606885218998" duration="24472000" />
       <workItem from="1606966515741" duration="1328000" />
       <workItem from="1606975548395" duration="47047000" />
-      <workItem from="1607389370421" duration="51059000" />
+      <workItem from="1607389370421" duration="51940000" />
     </task>
+    <task id="LOCAL-00001" summary="测试">
+      <created>1607498187105</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607498187105</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="2" key="#Template_Data_Languages" timestamp="1607393319236">
@@ -304,18 +312,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="2" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1280.680@0.0.1280.680" timestamp="1606871976938" />
-    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1607497600345">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1607498998857">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607497600345" />
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1607498998857" />
     <state x="0" y="50" key="DiffContextDialog" timestamp="1607497599631">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="50" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1607497599631" />
-    <state x="447" y="169" key="FileChooserDialogImpl" timestamp="1607497969394">
+    <state x="447" y="169" key="FileChooserDialogImpl" timestamp="1607499012894">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="447" y="169" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1607497969394" />
+    <state x="447" y="169" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1607499012894" />
+    <state x="552" y="381" width="270" height="202" key="Github.ShareDialog" timestamp="1607498248261">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="552" y="381" width="270" height="202" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1607498248261" />
     <state width="845" height="269" key="GridCell.Tab.0.bottom" timestamp="1607493192804">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
